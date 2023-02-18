@@ -54,7 +54,7 @@
 </template>
 
 <!-- Option API -->
-
+<!--
 <script>
 export default {
   data() {
@@ -77,7 +77,7 @@ export default {
   },
 };
 </script>
-
+-->
 <!-- Composition API -->
 
 <!--
@@ -95,6 +95,9 @@ export default {
 
       const getTable = document.querySelector(".table-container");
       getTable.style.display = "block";
+
+      const goToTableButton = document.querySelector(".go-to-table-button");
+      goToTableButton.style.display = "block";
     };
 
     return {
@@ -107,7 +110,7 @@ export default {
 -->
 
 <!-- Script Setup -->
-<!--
+
 <script setup>
 import { ref } from "vue";
 
@@ -120,6 +123,8 @@ const getPosts = async () => {
 
   const getTable = document.querySelector(".table-container");
   getTable.style.display = "block";
+
+  const goToTableButton = document.querySelector(".go-to-table-button");
+  goToTableButton.style.display = "block";
 };
 </script>
--->
