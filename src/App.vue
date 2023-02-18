@@ -88,7 +88,6 @@ export default {
 
 <!-- Script Setup -->
 
-<!--
 <script setup>
 import { ref } from "vue";
 
@@ -103,4 +102,3 @@ const getPosts = async () => {
   getTable.style.display = "block";
 };
 </script>
--->
