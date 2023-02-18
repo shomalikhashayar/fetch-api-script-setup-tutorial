@@ -34,6 +34,9 @@
   </div>
 </template>
 
+<!-- Option API -->
+
+<!--
 <script>
 export default {
   data() {
@@ -53,3 +56,51 @@ export default {
   },
 };
 </script>
+-->
+
+<!-- Composition API -->
+
+<!--
+<script>
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const user = ref([]);
+
+    const getPosts = async () => {
+      const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+      const finalRes = await res.json();
+      user.value = finalRes;
+
+      const getTable = document.querySelector(".table-container");
+      getTable.style.display = "block";
+    };
+
+    return {
+      user,
+      getPosts,
+    };
+  },
+};
+</script>
+-->
+
+<!-- Script Setup -->
+
+<!--
+<script setup>
+import { ref } from "vue";
+
+const user = ref([]);
+
+const getPosts = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+  const finalRes = await res.json();
+  user.value = finalRes;
+
+  const getTable = document.querySelector(".table-container");
+  getTable.style.display = "block";
+};
+</script>
+-->
